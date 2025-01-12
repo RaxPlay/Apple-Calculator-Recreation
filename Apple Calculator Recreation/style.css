@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    min-height: 100vh;
+    color: white;
+}
+.button-container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    color: white;
+}
+button{
+    padding: 10px;
+    background-color: rgb(34, 34, 34);
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 50%;
+    height: 60px;
+    color: white;
+}
+.first-three-btns{
+    background-color: rgb(92, 92, 92);
+    border: 1px solid rgb(92, 92, 92);
+}
+.important-btns{
+    background-color: orange;
+    border: 1px solid orange;
+}
+.input{
+    background-color: black;
+    border: none;
+    padding:5px;  
+    font-size: 1.2rem;
+    text-align: end;
+    color: white;
+}
