@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,44 +9,49 @@
 </head>
 <body>
     <div class="calculator-container">
-        <input type="text" placeholder="0" class="input">
+        <input readonly class="display positive">
         <div class="button-container">
-            <button class="AC first-three-btns">
+            <button class="AC first-three-btns" onclick="clearDisplay()">
                 AC
             </button>
-            <button class="positive-negative first-three-btns">
+            <button class="positive-negative first-three-btns" 
+            onclick="negativePositive()">
                 ±
             </button>
-            <button class="percentage first-three-btns">
+            <button class="percentage first-three-btns" onclick="appendDisplay('%')">
                 %
             </button>
-            <button class="division important-btns">
+            <button class="division important-btns" onclick="appendDisplay('/')">
                 <i class="fa-solid fa-divide"></i>
             </button>
-            <button class="numbers seven">7</button>
-            <button class="numbers eight">8</button>
-            <button class="numbers nine">9</button>
-            <button class="multiplication important-btns">
+            <button onclick="appendDisplay('7')">7</button>
+            <button onclick="appendDisplay('8')">8</button>
+            <button onclick="appendDisplay('9')">9</button>
+            <button class="multiplication important-btns" 
+            onclick="appendDisplay('*')">
                 <i class="fa-solid fa-xmark"></i>
             </button>
-            <button class="numbers 4">4</button>
-            <button class="numbers 5">5</button>
-            <button class="numbers 6">6</button>
-            <button class="minus important-btns">
+            <button onclick="appendDisplay('4')">4</button>
+            <button onclick="appendDisplay('5')">5</button>
+            <button onclick="appendDisplay('6')">6</button>
+            <button class="minus important-btns"
+            onclick="appendDisplay('-')">
                 <i class="fa-solid fa-minus"></i>
             </button>
-            <button class="numbers 1">1</button>
-            <button class="numbers 2">2</button>
-            <button class="numbers 3">3</button>
-            <button class="plus important-btns">
+            <button onclick="appendDisplay('1')">1</button>
+            <button onclick="appendDisplay('2')">2</button>
+            <button onclick="appendDisplay('3')">3</button>
+            <button class="plus important-btns"
+            onclick="appendDisplay('+')">
                 <i class="fa-solid fa-plus"></i>
             </button>
             <button class="calculator-icon">
                 <i class="fa-solid fa-calculator"></i>
             </button>
-            <button class="numbers 0">0</button>
-            <button class="dot">.</button>
-            <button class="equals important-btns">
+            <button onclick="appendDisplay('0')">0</button>
+            <button onclick="appendDisplay('.')">.</button>
+            <button class="equals important-btns" 
+            onclick="calculate()">
                 <i class="fa-solid fa-equals"></i>
             </button>
         </div>    
